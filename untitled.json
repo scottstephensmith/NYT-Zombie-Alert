@@ -1,0 +1,650 @@
+using this URL ==> http://api.nytimes.com/svc/search/v2/articlesearch.json?q=zombie&begin_date=20130101&end_date=20131231&sort=newest&api-key=e2ccb8664b26fad01845f1c1549fb8ac:16:69681960
+		//need to have date be dynamic, search back 7 days. 
+		//API key needs to be suppled dynamically as well
+		//need the count from response.docs.length? maybe one more paremeter in there. 
+
+
+{
+    "copyright": "Copyright (c) 2013 The New York Times Company.  All Rights Reserved.",
+    "response": {
+        "docs": [
+            {
+                "_id": "52c2f46d798810026f4af317",
+                "abstract": "Zombies, roaches, and weasels, oh my.",
+                "blog": [],
+                "byline": {
+                    "original": "By PAUL KRUGMAN",
+                    "person": [
+                        {
+                            "firstname": "Paul",
+                            "lastname": "KRUGMAN",
+                            "organization": "",
+                            "rank": 1,
+                            "role": "reported"
+                        }
+                    ]
+                },
+                "document_type": "blogpost",
+                "headline": {
+                    "kicker": "Paul Krugman",
+                    "main": "Jean-Baptiste Say, Cockroach"
+                },
+                "keywords": [],
+                "lead_paragraph": null,
+                "multimedia": [],
+                "news_desk": null,
+                "print_page": null,
+                "pub_date": "2013-12-31T11:42:43Z",
+                "section_name": "Opinion",
+                "snippet": "Zombies, roaches, and weasels, oh my.",
+                "source": "The New York Times",
+                "subsection_name": null,
+                "type_of_material": "Blog",
+                "web_url": "http://krugman.blogs.nytimes.com/2013/12/31/jean-baptiste-say-cockroach/",
+                "word_count": "400"
+            },
+            {
+                "_id": "52c2e29e798810026f4af2f3",
+                "abstract": "City investigators have made a curious finding: Compared to other municipal employees, a disproportionately large number of election workers died in the last two years.",
+                "blog": [],
+                "byline": {
+                    "original": "By SAM ROBERTS",
+                    "person": [
+                        {
+                            "firstname": "Sam",
+                            "lastname": "ROBERTS",
+                            "organization": "",
+                            "rank": 1,
+                            "role": "reported"
+                        }
+                    ]
+                },
+                "document_type": "blogpost",
+                "headline": {
+                    "kicker": "City Room",
+                    "main": "Monitoring Elections Could Kill You. Well, Sort Of."
+                },
+                "keywords": [
+                    {
+                        "name": "organizations",
+                        "rank": "1",
+                        "value": "Board of Elections (NYC)"
+                    }
+                ],
+                "lead_paragraph": null,
+                "multimedia": [],
+                "news_desk": null,
+                "print_page": null,
+                "pub_date": "2013-12-31T10:24:33Z",
+                "section_name": "N.Y. / Region",
+                "snippet": "City investigators have made a curious finding: Compared to other municipal employees, a disproportionately large number of election workers died in the last two years.",
+                "source": "The New York Times",
+                "subsection_name": null,
+                "type_of_material": "Blog",
+                "web_url": "http://cityroom.blogs.nytimes.com/2013/12/31/monitoring-elections-could-kill-you-well-sort-of/",
+                "word_count": "307"
+            },
+            {
+                "_id": "52c2c0e0798810026f4af2b9",
+                "abstract": "The Game Theory panelists make the case for their favorite games of the year.",
+                "blog": [],
+                "byline": {
+                    "organization": "The New York Times",
+                    "original": "By THE NEW YORK TIMES",
+                    "person": []
+                },
+                "document_type": "blogpost",
+                "headline": {
+                    "kicker": "ArtsBeat",
+                    "main": "Game Theory: The Best of 2013"
+                },
+                "keywords": [
+                    {
+                        "name": "subject",
+                        "rank": "2",
+                        "value": "Games"
+                    },
+                    {
+                        "name": "subject",
+                        "rank": "1",
+                        "value": "Computer and Video Games"
+                    }
+                ],
+                "lead_paragraph": null,
+                "multimedia": [
+                    {
+                        "height": 126,
+                        "legacy": {
+                            "wide": "images/2013/12/25/arts/25GTbioshock/25GTbioshock-thumbWide.jpg",
+                            "wideheight": "126",
+                            "widewidth": "190"
+                        },
+                        "subtype": "wide",
+                        "type": "image",
+                        "url": "images/2013/12/25/arts/25GTbioshock/25GTbioshock-thumbWide.jpg",
+                        "width": 190
+                    },
+                    {
+                        "height": 338,
+                        "legacy": {
+                            "xlarge": "images/2013/12/25/arts/25GTviolence3/25GTviolence3-articleLarge.jpg",
+                            "xlargeheight": "338",
+                            "xlargewidth": "600"
+                        },
+                        "subtype": "xlarge",
+                        "type": "image",
+                        "url": "images/2013/12/25/arts/25GTviolence3/25GTviolence3-articleLarge.jpg",
+                        "width": 600
+                    },
+                    {
+                        "height": 75,
+                        "legacy": {
+                            "thumbnail": "images/2013/12/25/arts/25GTviolence3/25GTviolence3-thumbStandard.jpg",
+                            "thumbnailheight": "75",
+                            "thumbnailwidth": "75"
+                        },
+                        "subtype": "thumbnail",
+                        "type": "image",
+                        "url": "images/2013/12/25/arts/25GTviolence3/25GTviolence3-thumbStandard.jpg",
+                        "width": 75
+                    }
+                ],
+                "news_desk": null,
+                "print_page": null,
+                "pub_date": "2013-12-31T08:01:14Z",
+                "section_name": "Arts",
+                "snippet": "The Game Theory panelists make the case for their favorite games of the year.",
+                "source": "The New York Times",
+                "subsection_name": null,
+                "type_of_material": "Blog",
+                "web_url": "http://artsbeat.blogs.nytimes.com/2013/12/31/game-theory-the-best-of-2013/",
+                "word_count": "1351"
+            },
+            {
+                "_id": "52c02a84798810447146af34",
+                "abstract": "When people can\u2019t take jokes.",
+                "blog": [],
+                "byline": {
+                    "original": "By PAUL KRUGMAN",
+                    "person": [
+                        {
+                            "firstname": "Paul",
+                            "lastname": "KRUGMAN",
+                            "organization": "",
+                            "rank": 1,
+                            "role": "reported"
+                        }
+                    ]
+                },
+                "document_type": "blogpost",
+                "headline": {
+                    "kicker": "Paul Krugman",
+                    "main": "The Humor Test"
+                },
+                "keywords": [],
+                "lead_paragraph": null,
+                "multimedia": [],
+                "news_desk": null,
+                "print_page": null,
+                "pub_date": "2013-12-29T08:55:46Z",
+                "section_name": "Opinion",
+                "snippet": "When people can\u2019t take jokes.",
+                "source": "The New York Times",
+                "subsection_name": null,
+                "type_of_material": "Blog",
+                "web_url": "http://krugman.blogs.nytimes.com/2013/12/29/the-humor-test/",
+                "word_count": "217"
+            },
+            {
+                "_id": "52bef88b798810447146add3",
+                "abstract": "Boris Titov, Russia's presidential commissioner for entrepreneurs' rights, is carefully speaking up for them as Kremlin officials hope for improved climate for small business; only 7 percent of Russians are engaged in entrepreneurial activity, as many hurdles remain in spite of Pres Vladimir V Putin's economic agenda to fight corruption and ease way for business.",
+                "blog": [],
+                "byline": {
+                    "contributor": "",
+                    "original": "By JOSHUA YAFFA",
+                    "person": [
+                        {
+                            "firstname": "Joshua",
+                            "lastname": "YAFFA",
+                            "organization": "",
+                            "rank": 1,
+                            "role": "reported"
+                        }
+                    ]
+                },
+                "document_type": "article",
+                "headline": {
+                    "main": "Signs of a Russian Thaw (Toward Business)",
+                    "print_headline": "First Signs of a Russian Thaw"
+                },
+                "keywords": [
+                    {
+                        "is_major": "Y",
+                        "name": "subject",
+                        "rank": "5",
+                        "value": "Small Business"
+                    },
+                    {
+                        "is_major": "N",
+                        "name": "persons",
+                        "rank": "1",
+                        "value": "Telkov, Ruslan"
+                    },
+                    {
+                        "is_major": "Y",
+                        "name": "glocations",
+                        "rank": "3",
+                        "value": "Russia"
+                    },
+                    {
+                        "is_major": "Y",
+                        "name": "subject",
+                        "rank": "4",
+                        "value": "Entrepreneurship"
+                    },
+                    {
+                        "is_major": "N",
+                        "name": "subject",
+                        "rank": "7",
+                        "value": "Amnesties, Commutations and Pardons"
+                    },
+                    {
+                        "is_major": "Y",
+                        "name": "persons",
+                        "rank": "2",
+                        "value": "Titov, Boris"
+                    },
+                    {
+                        "is_major": "N",
+                        "name": "persons",
+                        "rank": "6",
+                        "value": "Khodorkovsky, Mikhail B"
+                    }
+                ],
+                "lead_paragraph": "In a country where entrepreneurs are scorned (or worse), an influential voice is speaking up for them \u2014 carefully.",
+                "multimedia": [
+                    {
+                        "height": 126,
+                        "legacy": {
+                            "wide": "images/2013/12/29/business/29-TITOV-JP1/29-TITOV-JP1-thumbWide-v2.jpg",
+                            "wideheight": "126",
+                            "widewidth": "190"
+                        },
+                        "subtype": "wide",
+                        "type": "image",
+                        "url": "images/2013/12/29/business/29-TITOV-JP1/29-TITOV-JP1-thumbWide-v2.jpg",
+                        "width": 190
+                    },
+                    {
+                        "height": 421,
+                        "legacy": {
+                            "xlarge": "images/2013/12/29/business/29-TITOV1/29-TITOV1-articleLarge.jpg",
+                            "xlargeheight": "421",
+                            "xlargewidth": "600"
+                        },
+                        "subtype": "xlarge",
+                        "type": "image",
+                        "url": "images/2013/12/29/business/29-TITOV1/29-TITOV1-articleLarge.jpg",
+                        "width": 600
+                    },
+                    {
+                        "height": 75,
+                        "legacy": {
+                            "thumbnail": "images/2013/12/29/business/29-TITOV-JP3/29-TITOV-JP3-thumbStandard.jpg",
+                            "thumbnailheight": "75",
+                            "thumbnailwidth": "75"
+                        },
+                        "subtype": "thumbnail",
+                        "type": "image",
+                        "url": "images/2013/12/29/business/29-TITOV-JP3/29-TITOV-JP3-thumbStandard.jpg",
+                        "width": 75
+                    }
+                ],
+                "news_desk": "SundayBusiness",
+                "print_page": "1",
+                "pub_date": "2013-12-29T00:00:00Z",
+                "section_name": "Business Day",
+                "snippet": "In a country where entrepreneurs are scorned (or worse), an influential voice is speaking up for them \u2014 carefully.",
+                "source": "The New York Times",
+                "subsection_name": "International Business",
+                "type_of_material": "News",
+                "web_url": "http://www.nytimes.com/2013/12/29/business/international/signs-of-a-russian-thaw-toward-business.html",
+                "word_count": "3520"
+            },
+            {
+                "_id": "52bebf5f798810447146ada2",
+                "abstract": null,
+                "blog": [],
+                "byline": {
+                    "organization": "REUTERS",
+                    "original": "By REUTERS",
+                    "person": []
+                },
+                "document_type": "article",
+                "headline": {
+                    "main": "Reddit Reaches for Profits Through a Geek-Culture Bazaar",
+                    "print_headline": "Reddit Reaches for Profits Through a Geek-Culture Bazaar"
+                },
+                "keywords": [],
+                "lead_paragraph": "Social news hub Reddit snagged an interview with Barack Obama last year. The big get for 2013 was reaching 90 million unique visitors a month, according to the company, on par with the likes of eBay. This season, even Microsoft co-founder and philanthropist Bill Gates joined its Secret Santa gift exchange.",
+                "multimedia": [],
+                "news_desk": null,
+                "print_page": null,
+                "pub_date": "2013-12-28T07:07:06Z",
+                "section_name": "Technology",
+                "snippet": "Social news hub Reddit snagged an interview with Barack Obama last year. The big get for 2013 was reaching 90 million unique visitors a month, according to the company, on par with the likes of eBay. This season, even Microsoft co-founder and...",
+                "source": "Reuters",
+                "subsection_name": null,
+                "type_of_material": "News",
+                "web_url": "http://www.nytimes.com/reuters/2013/12/28/technology/28reuters-reddit-gifts.html",
+                "word_count": "1159"
+            },
+            {
+                "_id": "52be68e8798810447146ad58",
+                "abstract": null,
+                "blog": [],
+                "byline": {
+                    "contributor": "",
+                    "original": "By ADAM W. KEPLER",
+                    "person": [
+                        {
+                            "firstname": "Adam",
+                            "lastname": "KEPLER",
+                            "middlename": "W.",
+                            "organization": "",
+                            "rank": 1,
+                            "role": "reported"
+                        }
+                    ]
+                },
+                "document_type": "article",
+                "headline": {
+                    "main": "What\u2019s on Saturday",
+                    "print_headline": "What\u2019s on Saturday"
+                },
+                "keywords": [],
+                "lead_paragraph": "Television highlights.",
+                "multimedia": [],
+                "news_desk": "Culture",
+                "print_page": "8",
+                "pub_date": "2013-12-28T00:00:00Z",
+                "section_name": "Arts",
+                "snippet": "Television highlights.",
+                "source": "The New York Times",
+                "subsection_name": "Television",
+                "type_of_material": "Schedule",
+                "web_url": "http://www.nytimes.com/2013/12/28/arts/television/whats-on-saturday.html",
+                "word_count": "760"
+            },
+            {
+                "_id": "52bd7a6e7988107e40e20f61",
+                "abstract": "An assessment of when violence works in games, because it serves the narrative, and when it fails.",
+                "blog": [],
+                "byline": {
+                    "original": "By KIRK HAMILTON",
+                    "person": [
+                        {
+                            "firstname": "Kirk",
+                            "lastname": "HAMILTON",
+                            "organization": "",
+                            "rank": 1,
+                            "role": "reported"
+                        }
+                    ]
+                },
+                "document_type": "blogpost",
+                "headline": {
+                    "kicker": "ArtsBeat",
+                    "main": "Game Theory: Exploring Meaningful Violence",
+                    "print_headline": "Focusing On the How Of Violence "
+                },
+                "keywords": [
+                    {
+                        "name": "subject",
+                        "rank": "2",
+                        "value": "Violence (Media and Entertainment)"
+                    },
+                    {
+                        "name": "subject",
+                        "rank": "1",
+                        "value": "Computer and Video Games"
+                    }
+                ],
+                "lead_paragraph": null,
+                "multimedia": [
+                    {
+                        "height": 126,
+                        "legacy": {
+                            "wide": "images/2013/12/25/arts/25GTviolence3/25GTviolence3-thumbWide.jpg",
+                            "wideheight": "126",
+                            "widewidth": "190"
+                        },
+                        "subtype": "wide",
+                        "type": "image",
+                        "url": "images/2013/12/25/arts/25GTviolence3/25GTviolence3-thumbWide.jpg",
+                        "width": 190
+                    },
+                    {
+                        "height": 338,
+                        "legacy": {
+                            "xlarge": "images/2013/12/25/arts/25GTviolence3/25GTviolence3-articleLarge.jpg",
+                            "xlargeheight": "338",
+                            "xlargewidth": "600"
+                        },
+                        "subtype": "xlarge",
+                        "type": "image",
+                        "url": "images/2013/12/25/arts/25GTviolence3/25GTviolence3-articleLarge.jpg",
+                        "width": 600
+                    },
+                    {
+                        "height": 75,
+                        "legacy": {
+                            "thumbnail": "images/2013/12/25/arts/25GTviolence3/25GTviolence3-thumbStandard.jpg",
+                            "thumbnailheight": "75",
+                            "thumbnailwidth": "75"
+                        },
+                        "subtype": "thumbnail",
+                        "type": "image",
+                        "url": "images/2013/12/25/arts/25GTviolence3/25GTviolence3-thumbStandard.jpg",
+                        "width": 75
+                    }
+                ],
+                "news_desk": null,
+                "print_page": null,
+                "pub_date": "2013-12-27T08:01:52Z",
+                "section_name": "Arts",
+                "snippet": "An assessment of when violence works in games, because it serves the narrative, and when it fails.",
+                "source": "The New York Times",
+                "subsection_name": null,
+                "type_of_material": "Blog",
+                "web_url": "http://artsbeat.blogs.nytimes.com/2013/12/27/game-theory-exploring-meaningful-violence/",
+                "word_count": "783"
+            },
+            {
+                "_id": "52bd1c967988107e40e20ed9",
+                "abstract": null,
+                "blog": [],
+                "byline": {
+                    "contributor": "",
+                    "original": "By ANNE MANCUSO, MARTIN TSAI and JORDAN KLEBANOW",
+                    "person": [
+                        {
+                            "firstname": "Anne",
+                            "lastname": "MANCUSO",
+                            "organization": "",
+                            "rank": 1,
+                            "role": "reported"
+                        },
+                        {
+                            "firstname": "Martin",
+                            "lastname": "TSAI",
+                            "organization": "",
+                            "rank": 2,
+                            "role": "reported"
+                        },
+                        {
+                            "firstname": "Jordan",
+                            "lastname": "KLEBANOW",
+                            "organization": "",
+                            "rank": 3,
+                            "role": "reported"
+                        }
+                    ]
+                },
+                "document_type": "article",
+                "headline": {
+                    "main": "Spare Times for Dec. 27-Jan. 2",
+                    "print_headline": "Spare Times"
+                },
+                "keywords": [
+                    {
+                        "is_major": "N",
+                        "name": "subject",
+                        "rank": "1",
+                        "value": "Culture (Arts)"
+                    }
+                ],
+                "lead_paragraph": "A listing of walking tours and museum exhibits as well as events to ring in the new year.",
+                "multimedia": [],
+                "news_desk": "Weekend",
+                "print_page": "32",
+                "pub_date": "2013-12-27T00:00:00Z",
+                "section_name": "Arts",
+                "snippet": "A listing of walking tours and museum exhibits as well as events to ring in the new year.",
+                "source": "The New York Times",
+                "subsection_name": null,
+                "type_of_material": "Schedule",
+                "web_url": "http://www.nytimes.com/2013/12/27/arts/spare-times-for-dec-27-jan-2.html",
+                "word_count": "2892"
+            },
+            {
+                "_id": "52bcb7b87988107e40e20e41",
+                "abstract": "New York Times writers offer suggestions for New Year's Eve concerts.",
+                "blog": [],
+                "byline": {
+                    "contributor": "",
+                    "original": "By JON CARAMANICA, NATE CHINEN, JON PARELES, BEN RATLIFF, MEGAN ANGELO and STACEY ANDERSON",
+                    "person": [
+                        {
+                            "firstname": "Jon",
+                            "lastname": "CARAMANICA",
+                            "organization": "",
+                            "rank": 1,
+                            "role": "reported"
+                        },
+                        {
+                            "firstname": "Nate",
+                            "lastname": "CHINEN",
+                            "organization": "",
+                            "rank": 2,
+                            "role": "reported"
+                        },
+                        {
+                            "firstname": "Jon",
+                            "lastname": "PARELES",
+                            "organization": "",
+                            "rank": 3,
+                            "role": "reported"
+                        },
+                        {
+                            "firstname": "Ben",
+                            "lastname": "RATLIFF",
+                            "organization": "",
+                            "rank": 4,
+                            "role": "reported"
+                        },
+                        {
+                            "firstname": "Megan",
+                            "lastname": "ANGELO",
+                            "organization": "",
+                            "rank": 5,
+                            "role": "reported"
+                        },
+                        {
+                            "firstname": "Stacey",
+                            "lastname": "ANDERSON",
+                            "organization": "",
+                            "rank": 6,
+                            "role": "reported"
+                        }
+                    ]
+                },
+                "document_type": "article",
+                "headline": {
+                    "main": "Music for Final Hours, Set to Primal Beats",
+                    "print_headline": "Music for Final Hours, Set to Primal Beats",
+                    "seo": "Pop Picks for New Year\u2019s Eve in New York"
+                },
+                "keywords": [
+                    {
+                        "is_major": "Y",
+                        "name": "subject",
+                        "rank": "1",
+                        "value": "New Year"
+                    },
+                    {
+                        "is_major": "Y",
+                        "name": "subject",
+                        "rank": "2",
+                        "value": "Music"
+                    }
+                ],
+                "lead_paragraph": "Critics and writers for The New York Times recommend New Year\u2019s Eve pop music events in the city.",
+                "multimedia": [
+                    {
+                        "height": 126,
+                        "legacy": {
+                            "wide": "images/2013/12/27/arts/27EVE01/27EVE01-thumbWide.jpg",
+                            "wideheight": "126",
+                            "widewidth": "190"
+                        },
+                        "subtype": "wide",
+                        "type": "image",
+                        "url": "images/2013/12/27/arts/27EVE01/27EVE01-thumbWide.jpg",
+                        "width": 190
+                    },
+                    {
+                        "height": 399,
+                        "legacy": {
+                            "xlarge": "images/2013/12/27/arts/27EVE01/27EVE01-articleLarge.jpg",
+                            "xlargeheight": "399",
+                            "xlargewidth": "600"
+                        },
+                        "subtype": "xlarge",
+                        "type": "image",
+                        "url": "images/2013/12/27/arts/27EVE01/27EVE01-articleLarge.jpg",
+                        "width": 600
+                    },
+                    {
+                        "height": 75,
+                        "legacy": {
+                            "thumbnail": "images/2013/12/27/arts/27EVE01/27EVE01-thumbStandard.jpg",
+                            "thumbnailheight": "75",
+                            "thumbnailwidth": "75"
+                        },
+                        "subtype": "thumbnail",
+                        "type": "image",
+                        "url": "images/2013/12/27/arts/27EVE01/27EVE01-thumbStandard.jpg",
+                        "width": 75
+                    }
+                ],
+                "news_desk": "Weekend",
+                "print_page": "11",
+                "pub_date": "2013-12-27T00:00:00Z",
+                "section_name": "Arts",
+                "snippet": "Critics and writers for The New York Times recommend New Year\u2019s Eve pop music events in the city.",
+                "source": "The New York Times",
+                "subsection_name": "Music",
+                "type_of_material": "Schedule",
+                "web_url": "http://www.nytimes.com/2013/12/27/arts/music/pop-picks-for-new-years-eve-in-new-york.html",
+                "word_count": "3496"
+            }
+        ],
+        "meta": {
+            "hits": 387,
+            "offset": 0,
+            "time": 31
+        }
+    },
+    "status": "OK"
+}

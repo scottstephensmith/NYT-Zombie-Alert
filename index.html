@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>NYT Zombie Warning System</title>
+
+		<!-- Meta Tags -->
+		<meta charset="utf-8"/>
+		
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/reset.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,900italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/style.css"/>
+
+		<!-- JavaScript -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	
+	</head>
+	<body>
+		
+		<header> <!--Header -->
+
+			<!-- Top Navigation -->
+			<nav>
+				<ul class="clearfix">
+					<li><a class="what" href="#">How It Works</a></li>
+					<li><a class="new" href="#">New Fear</a></li>
+				</ul>
+			</nav>
+			
+			<!-- Modal Information Box -->
+			<div class="overlay" id="modal">
+				<div class="content">
+					<h3>How It Works</h3>
+					<div>
+						<p>The Twitter Early Response System provides timely on-the-ground intel on potential disasters.</p>
+						<p>It works by isolating a specific term in the global Twitter stream and then analyzes the frequency of that term to determine if the chatter is typical or heightened. It will then advise you on steps to take using a standard color-coded warning system.</p>
+						<p>Created by Scott Stephen Smith.</p>
+						<a class="close" href="#">Got It!</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- logo text -->
+			<h1>NYT Zombie Warning System</h1>
+
+		</header>
+		<div id="key">
+      <div id="red-key"></div> = high alert &nbsp; &nbsp;&nbsp;<div id="orange-key"></div> = caution &nbsp;&nbsp; &nbsp;<div id="green-key"></div> = normal
+    </div>
+    <h2 id="fear-alert">ZOMBIES</h2>
+
+    <div id="tweet-count">There have been # articles mentioning zombies in the past 7 days</div>
+
+		<section id="geo">
+		  <h3>Hot Zones</h3>
+		  <div id="map-container"></div>
+		</section>
+    
+	</body>
+</html>
