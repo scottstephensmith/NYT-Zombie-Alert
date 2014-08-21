@@ -35,29 +35,37 @@
 				<div class="content">
 					<h3>How It Works</h3>
 					<div>
-						<p>The Twitter Early Response System provides timely on-the-ground intel on potential disasters.</p>
-						<p>It works by isolating a specific term in the global Twitter stream and then analyzes the frequency of that term to determine if the chatter is typical or heightened. It will then advise you on steps to take using a standard color-coded warning system.</p>
+						<p>The NYT Apocalypse Alert System provides uses the New York Times API to determine how likelihood of the coming apocalypse happening today. It measures the frequency of events during the past week and computes a warning level based on that.</p>
+						
 						<p>Created by Scott Stephen Smith.</p>
-						<a class="close" href="#">Got It!</a>
+						<a class="close" href="#">Understood</a>
 					</div>
 				</div>
 			</div>
 
 			<!-- logo text -->
-			<h1>NYT Zombie Warning System</h1>
-
+			
+			<h1>NYT Apocalypse Warning System</h1>
+			
+			<!-- <div class="launch-placeholder">Run Again</div> -->
 		</header>
-		<div id="key">
-      <div id="red-key"></div> = high alert &nbsp; &nbsp;&nbsp;<div id="orange-key"></div> = caution &nbsp;&nbsp; &nbsp;<div id="green-key"></div> = normal
-    </div>
-    <h2 id="fear-alert">ZOMBIES</h2>
-
-    <div id="article-count">There have been # articles mentioning zombies in the past 7 days</div>
-
-		<section id="geo">
-		  <h3>Hot Zones</h3>
-		  <div id="map-container"></div>
-		</section>
-    
+<div class="launch">Launch</div>
+			
+		<section class="main">
+			<!-- <div id="key">
+	      		<div id="red-key"></div> = high alert &nbsp; &nbsp;&nbsp;<div id="orange-key"></div> = caution &nbsp;&nbsp; &nbsp;<div id="green-key"></div> = normal
+	    	</div> -->
+	   		<h2 id="fear-alert"></h2>
+			
+			<div id="count-ctr">
+				<p>Mentions of <span id="term">zombies</span> in the past week:</p>
+	    		<div id="article-count"></div>
+	    	</div>	
+		
+			<div id="instructions">
+				<h3>What You Should Do</h3>
+				<p></p>
+			</div> 
+    	</section>
 	</body>
 </html>
