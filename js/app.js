@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
     $('.main').hide();
-    
+    $('.new').hide();
     // MODAL ABOUT POPUP
     $(".what").click(function(){
         $(".overlay").fadeIn(1000);
@@ -12,12 +12,19 @@ $(document).ready(function() {
     });
 
     // RUNNING FUNCTION BASED ON TERM
+    
+
+    $('.new').click(function() {
+         searchArticles();
+         console.log("new search started");
+         $('.main').fadeOut(100).fadeIn(300);
+    });
+
     $(".launch").click(function (){
         searchArticles();
+        $('.new').fadeIn(1000);
         $('.launch').fadeOut(50)
-       // $('.launch').fadeTo(500, 0);
         $('.main').fadeIn(1000);
-
     });
 
     // GETTING DATE FOR SEARCH (uses date.js library)
@@ -31,13 +38,16 @@ $(document).ready(function() {
     // THIS FUNCTION CALLS OUT TO THE NYT API, GETS DATA
     var searchArticles = function(search){
 
+        var term = $('.term-getter :selected').val();
+        console.log("within searchArticles functio, term is: " + term);
+
         var request =   {tagged: search,
                         site: 'New York Times',
                         order: 'decs',
                         sort: 'creation'};
 
         var result = $.ajax({
-            url: 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=zombie&begin_date=' + lastWeek + '&end_date=' + today + '&sort=newest&api-key=e2ccb8664b26fad01845f1c1549fb8ac:16:69681960',
+            url: 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + term +'&begin_date=' + lastWeek + '&end_date=' + today + '&sort=newest&api-key=e2ccb8664b26fad01845f1c1549fb8ac:16:69681960',
             type: 'GET',
             dataType: 'json',
             data: search
@@ -49,6 +59,7 @@ $(document).ready(function() {
             var articleCount = result.response["docs"].length;
             console.log(articleCount);
             $('#article-count').html(articleCount);
+            $('#term').html(term);
 
         if (articleCount < 1) {
             var alertLevel = "black";
